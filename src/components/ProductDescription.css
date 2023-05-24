@@ -1,0 +1,82 @@
+.product-description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 125px;
+    margin-top: 62px;
+    max-width: 445px;
+}
+
+.product-description .product-company {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FF7E1B;
+    margin-bottom: 24px;
+}
+
+.product-description .product-title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 48px;
+    color: #1D2026;
+    margin-bottom: 32px;
+}
+
+.product-description .description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #69707D;
+    margin-bottom: 24px;
+}
+
+.price-section {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 32px;
+}
+
+.price-section .price {
+    margin-right: 23px;
+}
+
+.price-section .actual-price {
+    margin-bottom: 3px;
+}
+
+.product-description .actual-price {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    color: #1D2026;
+}
+
+.product-description .discount {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FF7E1B;
+    background: #FFEEE2;
+    border-radius: 6px;
+    padding: 7px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.product-description .original-price {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration-line: line-through;
+    color: #B6BCC8;
+}
+
+.product-description .add {
+    display: flex;
+}
+
+.product-description .add-quantity {
+    margin-right: 16px;
+}

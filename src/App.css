@@ -1,0 +1,44 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  width: 100%;
+  max-width: 1110px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header .header-account .cart-overlay-empty {
+  position: absolute;
+  left: -200px;
+  top: 60px;
+}
+
+.header .header-account .cart-overlay {
+  position: absolute;
+  left: -200px;
+  top: 60px;
+}
+
+
+.app > hr {
+  height: 1px;
+  background-color: #E4E9F2;
+  border: none;
+  margin-bottom: 90px;
+}
+
+.product-content {
+  display: flex;
+  width: 100%;
+}

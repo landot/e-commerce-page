@@ -1,0 +1,23 @@
+.add-quantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F6F8FD;
+    border-radius: 10px;
+    /* dimensions will change in mobile vs desktop */
+    width: 157px;
+    height: 56px;
+    padding: 23px 6px 17px 6px;
+}
+
+.add-quantity p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1D2026;
+}
+
+.add-quantity img {
+    cursor: pointer;
+    padding: 10px;
+}
