@@ -6,9 +6,7 @@ const meta = {
   title: 'ProductImagesOverlay',
   component: ProductImagesOverlay,
   tags: ['autodocs'],
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
+  argTypes: {},
 } satisfies Meta<typeof ProductImagesOverlay>;
 
 export default meta;

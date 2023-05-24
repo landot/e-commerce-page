@@ -6,9 +6,7 @@ const meta = {
   title: 'AddToCartButton',
   component: AddToCartButton,
   tags: ['autodocs'],
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
+  argTypes: {},
 } satisfies Meta<typeof AddToCartButton>;
 
 export default meta;

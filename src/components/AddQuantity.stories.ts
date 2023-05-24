@@ -6,14 +6,12 @@ const meta = {
   title: 'AddQuantity',
   component: AddQuantity,
   tags: ['autodocs'],
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
+  argTypes: {},
 } satisfies Meta<typeof AddQuantity>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
-  args: {},
+  args: {quantity: 1},
 };

@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import { SetStateAction, useState } from 'react';
 import nextArrow from '../assets/images/icon-next.svg';
 import previousArrow from '../assets/images/icon-previous.svg';
 import { ReactComponent as ExitIcon } from '../assets/images/icon-close.svg';
 import './ProductImages.css';
 
 // todo fix the typing here
-export function ProductImages(props: {isOverlay: boolean, handleToggleOverlay: (_: unknown) => void}) {
+export function ProductImages(props: {isOverlay: boolean, handleToggleOverlay: (b: SetStateAction<boolean>) => void}) {
     const [selectedImage, setSelectedImage] = useState(1);
 
     return (
