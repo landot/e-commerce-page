@@ -1,4 +1,4 @@
-import deleteIcon from '../../public/images/icon-delete.svg';
+import deleteIcon from '/public/images/icon-delete.svg';
 import './Cart.css';
 
 export function Cart(props: {quantity: number, handleRemoveItem: () => void}) {

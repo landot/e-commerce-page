@@ -1,5 +1,5 @@
-import plus from '../../public/images/icon-plus.svg';
-import minus from '../../public/images/icon-minus.svg';
+import plus from '/public/images/icon-plus.svg';
+import minus from '/public/images/icon-minus.svg';
 import './AddQuantity.css';
 import '../App.css';
 import { SetStateAction } from 'react';

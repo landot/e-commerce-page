@@ -1,7 +1,7 @@
 import { SetStateAction, useState } from 'react';
-import nextArrow from '../../public/images/icon-next.svg';
-import previousArrow from '../../public/images/icon-previous.svg';
-import { ReactComponent as ExitIcon } from '../../public/images/icon-close.svg';
+import nextArrow from '/public/images/icon-next.svg';
+import previousArrow from '/public/images/icon-previous.svg';
+import { ReactComponent as ExitIcon } from '/public/images/icon-close.svg';
 import useWindowSize from '../utils/useWindowSize';
 import './ProductImages.css';
 
