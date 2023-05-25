@@ -42,3 +42,14 @@
   display: flex;
   width: 100%;
 }
+
+
+@media (max-width: 500px) {
+  .product-content {
+    flex-direction: column;
+  }
+
+  .app > hr {
+    display: none;
+  }
+}

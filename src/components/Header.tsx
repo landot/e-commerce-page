@@ -1,11 +1,11 @@
 import sneakersLogo from '../assets/images/logo.svg';
 import cartIcon from '../assets/images/icon-cart.svg';
 import avatar from '../assets/images/image-avatar.png';
-
-import './Header.css';
+import hamburgerIcon from '../assets/images/icon-menu.svg';
 import { EmptyCart } from './EmptyCart';
 import { useState } from 'react';
 import { Cart } from './Cart';
+import './Header.css';
 
 export function Header(
     props: {
@@ -17,7 +17,8 @@ export function Header(
     return (
         <div className='header'>
             <div className='header-navigation'>
-                <img src={sneakersLogo} alt="sneakers-logo" />
+                <img src={hamburgerIcon} alt="hamburger-icon" />
+                <img src={sneakersLogo} alt="sneakers-logo" className='logo' />
                 <a href="" className='link'>Collections</a>
                 <a href="" className='link'>Men</a>
                 <a href="" className='link'>Women</a>

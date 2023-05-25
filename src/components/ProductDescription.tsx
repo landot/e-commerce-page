@@ -13,9 +13,9 @@ export function ProductDescription(props: {handleCartUpdate: (q: number) => void
             <div className='price-section'>
                 <div className='price'>
                     <h2 className='actual-price'>$125.00</h2>
-                    <h3 className='original-price'>$250.00</h3>
+                    <p className='discount'>50%</p>
                 </div>
-                <p className='discount'>50%</p>
+                <h3 className='original-price'>$250.00</h3>
             </div>
             <div className='add'>
                 <AddQuantity quantity={quantity} handleQuantityUpdate={setQuantity} />

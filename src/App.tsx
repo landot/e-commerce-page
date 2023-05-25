@@ -11,7 +11,6 @@ function App() {
 
   return (
     <div className='app'>
-      <p>{showOverlay.toString()}</p>
       <Header productsInCart={productInCart} handleCartRemove={() => setProductInCart(0)}/>
       <hr />
       <div className='product-content'>

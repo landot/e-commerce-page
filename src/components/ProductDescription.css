@@ -34,11 +34,14 @@
 
 .price-section {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     margin-bottom: 32px;
 }
 
 .price-section .price {
+    display: flex;
+    flex-direction: row;
     margin-right: 23px;
 }
 
@@ -63,6 +66,7 @@
     padding: 7px;
     width: fit-content;
     height: fit-content;
+    margin-left: 23px;
 }
 
 .product-description .original-price {
@@ -71,6 +75,7 @@
     line-height: 26px;
     text-decoration-line: line-through;
     color: #B6BCC8;
+    flex-basis: 100%;
 }
 
 .product-description .add {
@@ -79,4 +84,28 @@
 
 .product-description .add-quantity {
     margin-right: 16px;
+}
+
+@media (max-width: 500px) {
+    .product-description {
+        margin: 0 24px 88px 24px;
+    }
+
+    .price-section {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .price-section .price {
+        display: flex;
+    }
+
+    .price-section .price .discount {
+        margin-left: 16px;
+    }
+
+    .product-description .add {
+        display: flex;
+        flex-direction: column;
+    }
 }

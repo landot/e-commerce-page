@@ -10,7 +10,7 @@
     cursor: pointer;
 }
 
-.header .header-navigation img {
+.header .header-navigation .logo {
     margin-right: 56.5px;
 }
 
@@ -34,4 +34,25 @@
     width: 50px;
     height: 50px;
     margin-left: 46px;
+}
+
+
+@media (max-width: 500px) {
+    .header {
+        margin: 20px 24px 25px 24px;
+    }
+
+    .header-navigation a {
+        display: none;
+    }
+
+    .header .header-navigation .logo {
+        margin-left: 16px;
+        margin-right: 0;
+    }
+    .header .header-account .avatar {
+        margin-left: 22px;
+        width: 24px;
+        height: 24px;
+    }
 }

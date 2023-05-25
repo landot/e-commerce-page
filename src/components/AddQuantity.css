@@ -21,3 +21,9 @@
     cursor: pointer;
     padding: 10px;
 }
+
+@media (max-width: 500px) {
+    .add-quantity {
+        width: 100%;
+    }
+}

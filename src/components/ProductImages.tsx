@@ -3,10 +3,11 @@ import nextArrow from '../assets/images/icon-next.svg';
 import previousArrow from '../assets/images/icon-previous.svg';
 import { ReactComponent as ExitIcon } from '../assets/images/icon-close.svg';
 import './ProductImages.css';
+import useWindowSize from '../utils/useWindowSize';
 
-// todo fix the typing here
 export function ProductImages(props: {isOverlay: boolean, handleToggleOverlay: (b: SetStateAction<boolean>) => void}) {
     const [selectedImage, setSelectedImage] = useState(1);
+    const size = useWindowSize();
 
     return (
         <div className='product-images'>
@@ -21,9 +22,9 @@ export function ProductImages(props: {isOverlay: boolean, handleToggleOverlay: (
                     className='selected-image' 
                     src={`src/assets/images/image-product-${selectedImage}.jpg`} 
                     alt="" 
-                    onClick={() => !props.isOverlay ? props.handleToggleOverlay((prev: boolean) => !prev): null}
+                    onClick={() => !props.isOverlay && (size.width && size.width >= 500) ? props.handleToggleOverlay((prev: boolean) => !prev): null}
                 />
-                {props.isOverlay && (
+                {props.isOverlay || (size.width && size.width < 500) && (
                     <>
                         <div 
                             className='arrow-container next'

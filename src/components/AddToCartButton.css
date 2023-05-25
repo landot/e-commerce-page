@@ -28,3 +28,10 @@
     width: 17.5px;
     height: 16px;
 }
+
+@media (max-width: 500px) {
+    .add-to-cart-button {
+        width: 100%;
+        margin-top: 16px;
+    }
+}
