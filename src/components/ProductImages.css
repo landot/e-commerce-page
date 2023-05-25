@@ -19,6 +19,7 @@
 }
 
 .product-images .selected-image {
+    width: 100%;
     max-width: 450px;
     max-height: 450px;
     margin-bottom: 32px;
@@ -26,8 +27,8 @@
 }
 
 .product-images .thumbnails img {
-    width: 88px;
-    height: 88px;
+    max-width: 88px;
+    max-height: 88px;
     border-radius: 10px;
     cursor: pointer;
 }

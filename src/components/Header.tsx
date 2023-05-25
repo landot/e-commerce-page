@@ -6,6 +6,7 @@ import { EmptyCart } from './EmptyCart';
 import { useState } from 'react';
 import { Cart } from './Cart';
 import './Header.css';
+import useWindowSize from '../utils/useWindowSize';
 
 export function Header(
     props: {
@@ -13,16 +14,19 @@ export function Header(
         handleCartRemove: () => void,
         openHamburgerMenu: () => void
     }) {
-        const [showCart, setShowCart] = useState(false);
-    
+    const [showCart, setShowCart] = useState(false);
+    const size = useWindowSize();
+
     return (
         <div className='header'>
             <div className='header-navigation'>
-                <img 
-                    src={hamburgerIcon} 
-                    alt="hamburger-icon" 
-                    onClick={props.openHamburgerMenu}
-                />
+                {size.width && size.width < 500 && (
+                        <img 
+                            src={hamburgerIcon} 
+                            alt="hamburger-icon" 
+                            onClick={props.openHamburgerMenu}
+                        />
+                )}
                 <img src={sneakersLogo} alt="sneakers-logo" className='logo' />
                 <a href="" className='link'>Collections</a>
                 <a href="" className='link'>Men</a>

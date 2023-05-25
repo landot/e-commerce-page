@@ -1,13 +1,13 @@
 import { useState } from 'react';
-import './App.css'
 import { HamburgerOverlay } from './components/HamburgerOverlay';
 import { Header } from './components/Header'
 import { ProductDescription } from './components/ProductDescription';
 import { ProductImages } from './components/ProductImages'
 import { ProductImagesOverlay } from './components/ProductImagesOverlay';
+import './App.css'
 
 function App() {
-  const [showHamburgerOverlay, setShowHamburgerOverlay] = useState(true);
+  const [showHamburgerOverlay, setShowHamburgerOverlay] = useState(false);
   const [showImageOverlay, setShowImageOverlay] = useState(false);
   const [productInCart, setProductInCart] = useState(0);
 
