@@ -1,4 +1,4 @@
-import exitIcon from '/public/icon-close.svg';
+import exitIcon from '/src/assets/icon-close.svg';
 import './HamburgerMenu.css';
 
 export function HamburgerMenu(props: {handleOverlayToggle: (b: boolean) => void}) {

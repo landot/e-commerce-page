@@ -1,7 +1,7 @@
-import sneakersLogo from '/public/logo.svg';
-import cartIcon from '/public/icon-cart.svg';
-import avatar from '/public/image-avatar.png';
-import hamburgerIcon from '/public/icon-menu.svg';
+import sneakersLogo from '/src/assets/logo.svg';
+import cartIcon from '/src/assets/icon-cart.svg';
+import avatar from '/src/assets/image-avatar.png';
+import hamburgerIcon from '/src/assets/icon-menu.svg';
 import { EmptyCart } from './EmptyCart';
 import { useState } from 'react';
 import { Cart } from './Cart';

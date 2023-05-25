@@ -1,4 +1,4 @@
-import deleteIcon from '/public/icon-delete.svg';
+import deleteIcon from '/src/assets/icon-delete.svg';
 import './Cart.css';
 
 export function Cart(props: {quantity: number, handleRemoveItem: () => void}) {
@@ -10,7 +10,7 @@ export function Cart(props: {quantity: number, handleRemoveItem: () => void}) {
             </div>
             <div className='cart-content'>
                 <div className='cart-details'>
-                    <img src={`public/image-product-1.jpg`} alt="product-image" className='product-image'/>
+                    <img src={`src/assets/image-product-1.jpg`} alt="product-image" className='product-image'/>
                     <div className='cart-description'>
                         <p className='product-name'>Fall Limited Edition Sneakers</p>
                         <span>
