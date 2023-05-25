@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+img {
+  user-select: none;
+  -khtml-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
 .app {
   width: 100%;
   max-width: 1110px;
@@ -49,15 +57,12 @@
 
 
 @media (max-width: 500px) {
-  .header .header-account .cart-overlay-empty {
+  .header .header-account .cart-overlay-empty, .header .header-account .cart-overla {
     position: absolute;
-    left: -75vw;
-    top: 55px;
-  }
-  
-  .header .header-account .cart-overlay {
-    position: absolute;
-    left: -75vw;
-    top: 55px;
+    width: 100dvw;
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
