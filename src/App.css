@@ -57,7 +57,7 @@ img {
 
 
 @media (max-width: 500px) {
-  .header .header-account .cart-overlay-empty, .header .header-account .cart-overla {
+  .header .header-account .cart-overlay-empty, .header .header-account .cart-overlay {
     position: absolute;
     width: 100dvw;
     position: fixed;
