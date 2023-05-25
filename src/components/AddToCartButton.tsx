@@ -1,4 +1,4 @@
-import { ReactComponent as CartIcon } from '../assets/images/icon-cart.svg';
+import { ReactComponent as CartIcon } from '../../public/images/icon-cart.svg';
 
 import './AddToCartButton.css';
 
