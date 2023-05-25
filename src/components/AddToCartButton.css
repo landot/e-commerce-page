@@ -25,9 +25,9 @@
     line-height: 20px;
 }
 
-.add-to-cart-button img {
-    width: 17.5px;
-    height: 16px;
+.add-to-cart-button .cart-icon {
+    fill: #FFFFFF;
+    transform: scale(.8);
 }
 
 @media (max-width: 500px) {

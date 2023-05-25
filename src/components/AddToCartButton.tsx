@@ -1,4 +1,5 @@
-import cartIcon from '../assets/images/icon-cart.svg'
+import { ReactComponent as CartIcon } from '../assets/images/icon-cart.svg';
+
 import './AddToCartButton.css';
 
 export function AddToCartButton(props: {handleCartUpdate: () => void}) {
@@ -7,8 +8,7 @@ export function AddToCartButton(props: {handleCartUpdate: () => void}) {
             className='add-to-cart-button'
             onClick={props.handleCartUpdate}
         >
-            <img src={cartIcon} alt="cart-icon" />
-            {/* todo make fill color white */}
+            <CartIcon className='cart-icon' />
             <button>Add to cart</button>
         </div>
     )
