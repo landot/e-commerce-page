@@ -58,7 +58,7 @@
   
   .header .header-account .cart-overlay {
     position: absolute;
-    left: -275px;
+    left: -65vw;
     top: 55px;
   }
 }

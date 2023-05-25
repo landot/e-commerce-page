@@ -1,6 +1,5 @@
 .cart-overlay-empty {
     z-index: 20;
-    width: 95vw;
     max-width: 360px;
     max-height: 256px;
     background: #FFFFFF;
