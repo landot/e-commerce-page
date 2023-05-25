@@ -10,14 +10,19 @@ import './Header.css';
 export function Header(
     props: {
         productsInCart: number, 
-        handleCartRemove: () => void
+        handleCartRemove: () => void,
+        openHamburgerMenu: () => void
     }) {
         const [showCart, setShowCart] = useState(false);
     
     return (
         <div className='header'>
             <div className='header-navigation'>
-                <img src={hamburgerIcon} alt="hamburger-icon" />
+                <img 
+                    src={hamburgerIcon} 
+                    alt="hamburger-icon" 
+                    onClick={props.openHamburgerMenu}
+                />
                 <img src={sneakersLogo} alt="sneakers-logo" className='logo' />
                 <a href="" className='link'>Collections</a>
                 <a href="" className='link'>Men</a>

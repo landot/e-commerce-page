@@ -53,3 +53,19 @@
     display: none;
   }
 }
+
+
+@media (max-width: 500px) {
+  .header .header-account .cart-overlay-empty {
+    position: absolute;
+    left: -65vw;
+    top: 55px;
+    width: 80vw;
+  }
+  
+  .header .header-account .cart-overlay {
+    position: absolute;
+    left: -275px;
+    top: 55px;
+  }
+}

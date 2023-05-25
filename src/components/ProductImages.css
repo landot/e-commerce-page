@@ -42,7 +42,7 @@
 
 .arrow-container {
     position: absolute;
-    z-index: 99;
+    z-index: 10;
     width: 56px;
     height: 56px;
     background-color: #FFFFFF;
